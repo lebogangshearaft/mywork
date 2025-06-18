@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f6f6;
+}
+header {
+    background: #6a0dad; /* Purple Header */
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+nav {
+    margin: 10px 0;
+}
+nav a {
+    margin: 0 15px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    display: flex; /* Flexbox for layout */
+    flex-direction: row; /* Align items in a row */
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+}
+.content {
+    flex: 1; /* Take remaining space */
+    padding: 20px;
+    min-width: 300px; /* Minimum width for responsiveness */
+}
+.project, .skill {
+    background: #ffffff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.profile-picture {
+    width: 300px; 
+    height: auto; 
+    border-radius: 50%;
+    margin-left: 20px;
+}
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #6a0dad; 
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.logos {
+    margin-top: 20px;
+}
+.logos img {
+    width: 50px;
+    margin: 0 10px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+    .profile-picture {
+        margin: 20px 0; 
+    }
+}
+
+
+
+/* About Section Alignment */
+.about-container {
+    display: flex; 
+    align-items: center; 
+    margin: 20px 0; 
+}
+
+.about-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.profile-picture-container {
+    flex: 0 0 auto; 
+}
+
+.profile-picture {
+    width: 400px; 
+    height: 500px; 
+    border-radius: 50%; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
